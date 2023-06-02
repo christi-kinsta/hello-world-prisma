@@ -1,0 +1,19 @@
+{
+  "name": "deployment-example-kinsta",
+  "dependencies": {
+    "@prisma/client": "4.13.0",
+    "next": "13.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "",
+    "start": "prisma generate && prisma migrate deploy && next build && next start",
+    "prisma:migrate": "prisma generate && prisma migrate deploy && next build",
+    "prisma:generate": "prisma generate"
+  },
+  "devDependencies": {
+    "prisma": "4.13.0"
+  }
+}
