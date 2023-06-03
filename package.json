@@ -8,8 +8,9 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "",
-    "start": "prisma generate && prisma migrate deploy && next build && next start",
+    "build": "next build",
+    "build": "npm run prisma:migrate",
+    "start": "next start",
     "prisma:migrate": "prisma generate && prisma migrate deploy && next build",
     "prisma:generate": "prisma generate"
   },
